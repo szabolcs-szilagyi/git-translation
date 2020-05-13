@@ -1,0 +1,95 @@
+[alias]
+  nyomd = push
+  huzd = pull
+  bunbak = blame
+  nemecsek = blame
+  NEMECSEK = blame
+  klonozd = clone
+  inditsd = init
+
+  add-hozza = add
+  mozgasd = mv
+  hozd-helyre = restore
+  torold = rm
+
+  kettevag = bisect
+  szedd-szet = bisect
+  kulonbseg = diff
+  hasonlitsd = diff
+  keresd = grep
+  elkovetesi-indokok = log
+  rovid-elkovetesi-indokok = shortlog
+  mutasd = show
+  sztatusz = satus
+  mi-a-helyzet = status
+  mi-a-palya = status
+
+  ag = branch
+  elkovet = commit
+  olvaszd-be = merge
+  tegyuk-at = rebase
+  dobd-ki = reset
+  valts = switch
+  at-all = checkout
+  jelold = tag
+
+  hozd-vissza = fetch
+  hozd-ide = fetch
+  cseresznye = cherry
+  cseresznyezes = cherry-pick
+  tisztisd = clean
+  beallitasok = config
+  demon = daemon
+  dzsin = daemon
+  leir = describe
+  lomtalanitas = gc
+  segitseg = help
+  jegyzetek = notes
+  alkalmazd = apply
+
+  http-hatter = http-backend
+  http-hozd-ide = http-fetch
+  http-hozd-vissza = http-fetch
+  http-nyomd = http-push
+
+  listazz-fajlokat = ls-files
+  listazz-messzieket = ls-remote
+  listazz-fat = ls-tree
+
+  olvaszd-be-bazis = merge-base
+  olvaszd-be-fajl = merge-file
+  olvaszd-be-targymutato = merge-index
+  olvassz-be-egy-fajlt = merge-one-file
+  olvaszto-eszkoz = mergetool
+  olvaszto-fa = merge-tree
+
+  metszd-a-csomagoltat = prune-packed
+  metszd = prune
+  messzi = remote
+  csomagold-at = repack
+  helyetesitsd = replace
+  helyetesitsd-huzd = replace-pull
+  vissza-allitas = revert
+  mutasd-agat = show-branch
+  mutasd-targymutatot = show-index
+  mutasd-hivatkozast = show-ref
+  rejtsd-el = stash
+  szedd-ki-az-urt = stripspace
+  al-egyseg = submodule
+  al-fa = subtree
+  szimbolikus-hivatkozas = symbolic-ref
+  csomagold-ki-fajlt = unpack-file
+  csomagold-ki-targy = unpack-object
+  frissitsd-targymutatot = update-index
+  frissitsd-hivatkozast = update-ref
+  frissitsd-szerver-informaciot = update-server-info
+  toltsd-fel-archivat = upload-archive
+  toltsd-fel-csomagot = upload-pack
+  valtozo = var
+  ellenorizd-elkovetest = verify-commit
+  ellenorizd-csomagot = verify-pack
+  ellenorizd-jelolest = verify-tag
+  verzio = version
+  mivaltozott = whatchnaged
+  munkafa = worktree
+  ir-fa = write-tree
