@@ -2,19 +2,60 @@
 
 GIT_CONFIG="$HOME/.gitconfig"
 GIT_TRANSLATION_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-GIT_TRANSLATION_CONFIG_FILE="$GIT_TRANSLATION_DIR/git_translation_aliases"
+GIT_TRANSLATION_CONFIG_FILE="$GIT_TRANSLATION_DIR/aliases"
 
-if grep -Fq "git-translation" "$GIT_CONFIG"
-then
-  # code if found
-  echo "Translation is already installed, exiting"
-  exit;
-fi
+function get_config_string () {
+  language=$1
 
-echo $GIT_TRANSLATION_DIR
-
-cat <<EOF >> $GIT_CONFIG
+  cat <<EOF
 # the following include was inserted by git-translation project
 [include]
-	path = $GIT_TRANSLATION_CONFIG_FILE
+  path = $GIT_TRANSLATION_CONFIG_FILE/$language
 EOF
+}
+
+function install() {
+  language=${1:-"hu"}
+  config=$(get_config_string $language)
+
+  if grep -Fq "$config" "$GIT_CONFIG"
+  then
+    echo "Some translation is already installed, exiting..."
+    exit;
+  fi
+
+  echo Installing aliases
+
+  echo "$config" >> $GIT_CONFIG
+}
+
+remove() {
+  language=${1:-"hu"}
+	file=$GIT_CONFIG
+	from=$(grep -n '# the following' "$file" | cut -d ':' -f 1)
+	to=$(( from + 2 ))
+	THE_DIFF=$(cat << EOF
+${from},${to}d1
+< # the following include was inserted by git-translation project
+< [include]
+<   path = $GIT_TRANSLATION_CONFIG_FILE/$language
+EOF
+          )
+  echo "$THE_DIFF" | patch -p0 "$file"
+}
+
+function main() {
+  case "$1" in
+    "remove")
+      remove $2
+      ;;
+    "help" | "")
+      echo print help
+      ;;
+    *)
+      install $2
+      ;;
+  esac
+}
+
+main $@
