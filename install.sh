@@ -44,16 +44,27 @@ EOF
   echo "$THE_DIFF" | patch -p0 "$file"
 }
 
+function help() {
+  cat <<EOF
+The follwing commands are available:
+  intall - install the alias config in your gitconfig
+  remove - opposite of install
+
+For both commands you can provide a language option but at the moment it will
+only work with "hu" for hungarian language.
+EOF
+}
+
 function main() {
   case "$1" in
+    "install")
+      install $2
+      ;;
     "remove")
       remove $2
       ;;
-    "help" | "")
-      echo print help
-      ;;
-    *)
-      install $2
+    "help" | "" | *)
+      help
       ;;
   esac
 }
