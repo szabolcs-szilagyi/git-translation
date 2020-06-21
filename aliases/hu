@@ -20,7 +20,7 @@
   elkovetesi-indokok = log
   rovid-elkovetesi-indokok = shortlog
   mutasd = show
-  sztatusz = satus
+  statusz = satus
   mi-a-helyzet = status
   mi-a-palya = status
 
@@ -90,6 +90,6 @@
   ellenorizd-csomagot = verify-pack
   ellenorizd-jelolest = verify-tag
   verzio = version
-  mivaltozott = whatchnaged
+  mivaltozott = whatchanged
   munkafa = worktree
   ir-fa = write-tree
