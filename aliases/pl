@@ -1,0 +1,86 @@
+[alias]
+ popchnij = push
+ pociagnij = pull
+ winic = blame
+ sklonuj = clone
+ w-tym = init
+
+ dodaj = add
+ ruszaj-sie = mv
+ przywroc = restore
+ usun = rm
+
+ przepolow = bisect
+ roznica = diff
+ szukaj = grep
+ dziennik = log
+ krotki-dziennik = shortlog
+ pokaz = show
+ status = status
+
+ patyk = branch
+ popelnic = commit
+ laczyc = merge
+ zmien-baze = rebase
+ zresetuj = reset
+ przelacz = switch
+ sprawdz = checkout
+ etykietka = tag
+
+ sprowadz = fetch
+ wisnia = cherry
+ zbierz-wisnie = cherry-pick
+ czysty = clean
+ skonfiguruj = config
+ demon = daemon
+ opisz = describe
+ zbierz-smieci = gc
+ pomoc = help
+ notatki = notes
+ zastosuj = apply
+
+ backend-http = http-backend
+ pobierz-http = http-fetch
+ http-popchnij = http-push
+
+ lista-plikow = ls-files
+ lista-zdalna = ls-remote
+ drzewo-listy = ls-tree
+
+ baza-laczenia = merge-base
+ polacz-plik = merge-file
+ polacz-indeks = merge-index
+ polacz-jeden-plik = merge-one-file
+ polacznarzedzie = mergetool
+ polacz-drzewo = merge-tree
+
+ przytnij-opakowanie = prune-packed
+ przytnij = prune
+ zdalny = remote
+ przepakuj = repack
+ zastap = replace
+ zamien-pociagnij = replace-pull
+ odwroc = revert
+ pokaz-patyk = show-branch
+ pokaz-indeks = show-index
+ pokaz-referencje = show-ref
+ przechowaj = stash
+ rozloz-przestrzen = stripspace
+ submodul = submodule
+ poddrzewo = subtree
+ symboliczne-odniesienie = symbolic-ref
+ rozpakuj-plik = unpack-file
+ rozpakuj-obiekt = unpack-object
+ zaktualizuj-indeks = update-index
+ zaktualizuj-odniesienie = update-ref
+ zaktualizuj-informacje-o-serwerze = update-server-info
+ zaktualizuj-archiwum = upload-archive
+ zaktualizuj-pakiet = upload-pack
+ zmienny = var
+ zweryfikuj-zatwierdz = verify-commit
+ zweryfikuj-pakiet = verify-pack
+ zweryfikuj-etykiete = verify-tag
+ wersja = version
+ cosiezmienilo = whatchanged
+ drzewopracy = worktree
+ zapisz-drzewo = write-tree
